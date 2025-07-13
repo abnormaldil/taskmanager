@@ -40,8 +40,6 @@ taskmanager/
 ├── src/ # React components
 └── package.json # NPM dependencies
 
-text
-
 ## 🛠️ Installation
 
 ### 1. Database Setup
@@ -50,10 +48,11 @@ text
 CREATE DATABASE taskmanagerdb;
 CREATE USER taskuser WITH PASSWORD 'taskpass';
 GRANT ALL PRIVILEGES ON DATABASE taskmanagerdb TO taskuser;
-2. Backend Configuration
+
+### 2. Backend Configuration
 Edit taskmanager-backend/src/main/resources/application.properties:
 
-properties
+properties:
 spring.datasource.url=jdbc:postgresql://localhost:5432/taskmanagerdb
 spring.datasource.username=taskuser
 spring.datasource.password=taskpass
@@ -61,7 +60,8 @@ spring.datasource.password=taskpass
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-3. Run Backend
+
+### 3. Run Backend
 bash
 cd taskmanager-backend
 ./mvnw spring-boot:run
