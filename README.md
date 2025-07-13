@@ -13,8 +13,8 @@ Built with:
 
 
 taskmanager/
-├── taskmanager-backend/      # Spring Boot project
-└── taskmanager-frontend/     # React frontend
+├── taskmanager-backend/ # Spring Boot project
+└── taskmanager-frontend/ # React frontend
 
 ---
 
