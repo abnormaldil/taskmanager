@@ -28,47 +28,63 @@ Ensure the following tools are installed on your system:
 - [PostgreSQL](https://www.postgresql.org/) (port 5432)
 - [pgAdmin](https://www.pgadmin.org/) (optional, for GUI DB access)
 
----
+
 
 ## 🧱 Backend Setup (Spring Boot)
 
 ### Step 1: Create Database
 
-Open **pgAdmin** or use CLI to create a database:
+#### Open **pgAdmin** or use CLI to create a database:
+```
 CREATE DATABASE taskmanagerdb;
+```
 
 ### Step 2: Configure Database in application.properties
 Edit taskmanager-backend/src/main/resources/application.properties:
 
 #### properties:
+```
 spring.datasource.url=jdbc:postgresql://localhost:5432/taskmanagerdb
 spring.datasource.username=your_postgres_username
 spring.datasource.password=your_postgres_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+```
 
 ### Step 3: Run the Backend
 #### bash:
+```
 cd taskmanager-backend
-./mvnw spring-boot:run   # or mvn spring-boot:run if Maven is installed
+./mvnw spring-boot:run
+```
+
 The backend API will be live at:
+```
 http://localhost:8080
+```
 
 ## 🌐 Frontend Setup (React)
 ### Step 1: Navigate to frontend folder
 #### bash:
+```
 cd taskmanager-frontend
+```
 ### Step 2: Install dependencies
 #### bash:
+```
 npm install
+```
 ### Step 3: Start the React app
 #### bash:
+```
 npm start
+```
 
 The frontend will run at:
+```
 http://localhost:3000
-
+```
 Make sure the backend is running on localhost:8080.
 
 ### 📡 Backend API Endpoints
