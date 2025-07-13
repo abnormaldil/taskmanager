@@ -15,9 +15,9 @@ Built with:
 taskmanager/
 ├── taskmanager-backend/ # Spring Boot project
 └── taskmanager-frontend/ # React frontend
-
----
 ```
+
+
 ## ⚙️ Requirements
 
 Ensure the following tools are installed on your system:
