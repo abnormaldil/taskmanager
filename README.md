@@ -15,11 +15,6 @@ taskmanager/
 ├── taskmanager-backend/ # Spring Boot project
 └── taskmanager-frontend/ # React frontend
 
-yaml
-Copy
-Edit
-
----
 
 ## ⚙️ Requirements
 
@@ -38,10 +33,9 @@ Ensure the following tools are installed on your system:
 ### Step 1: Create Database
 
 Open **pgAdmin** or use CLI to create a database:
-
-
 CREATE DATABASE taskmanagerdb;
-Step 2: Configure Database in application.properties
+
+### Step 2: Configure Database in application.properties
 Edit taskmanager-backend/src/main/resources/application.properties:
 
 properties:
