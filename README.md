@@ -38,17 +38,16 @@ CREATE DATABASE taskmanagerdb;
 ### Step 2: Configure Database in application.properties
 Edit taskmanager-backend/src/main/resources/application.properties:
 
-properties:
+#### properties:
 spring.datasource.url=jdbc:postgresql://localhost:5432/taskmanagerdb
 spring.datasource.username=your_postgres_username
 spring.datasource.password=your_postgres_password
-
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 ### Step 3: Run the Backend
-bash:
+#### bash:
 cd taskmanager-backend
 ./mvnw spring-boot:run   # or mvn spring-boot:run if Maven is installed
 The backend API will be live at:
