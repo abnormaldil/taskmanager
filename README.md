@@ -11,10 +11,12 @@ Built with:
 
 ## 📁 Project Structure
 
-taskmanager/
-├── taskmanager-backend/ # Spring Boot project
-└── taskmanager-frontend/ # React frontend
 
+taskmanager/
+├── taskmanager-backend/      # Spring Boot project
+└── taskmanager-frontend/     # React frontend
+
+---
 
 ## ⚙️ Requirements
 
@@ -55,13 +57,13 @@ http://localhost:8080
 
 ## 🌐 Frontend Setup (React)
 ### Step 1: Navigate to frontend folder
-bash:
+#### bash:
 cd taskmanager-frontend
 ### Step 2: Install dependencies
-bash:
+#### bash:
 npm install
 ### Step 3: Start the React app
-bash:
+#### bash:
 npm start
 
 The frontend will run at:
