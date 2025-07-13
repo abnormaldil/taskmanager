@@ -8,10 +8,10 @@ Built with:
 - 🐘 PostgreSQL (Database)
 
 ---
-```
+
 ## 📁 Project Structure
 
-```text
+```
 taskmanager/
 ├── taskmanager-backend/ # Spring Boot project
 └── taskmanager-frontend/ # React frontend
